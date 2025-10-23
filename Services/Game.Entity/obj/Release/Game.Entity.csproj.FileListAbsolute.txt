@@ -1,0 +1,14 @@
+G:\SVN\DLM\web\WHQJAdmin\Services\Game.Entity\bin\Release\Game.Entity.dll
+G:\SVN\DLM\web\WHQJAdmin\Services\Game.Entity\bin\Release\Game.Entity.pdb
+G:\SVN\DLM\web\WHQJAdmin\Services\Game.Entity\bin\Release\Game.Utils.dll
+G:\SVN\DLM\web\WHQJAdmin\Services\Game.Entity\obj\Release\Game.Entity.csprojResolveAssemblyReference.cache
+G:\SVN\DLM\web\WHQJAdmin\Services\Game.Entity\obj\Release\Game.Entity.dll
+G:\SVN\DLM\web\WHQJAdmin\Services\Game.Entity\obj\Release\Game.Entity.pdb
+C:\Users\Administrator\Desktop\whdlm\src\win\web\WHQJAdmin\Services\Game.Entity\bin\Release\Game.Entity.dll
+C:\Users\Administrator\Desktop\whdlm\src\win\web\WHQJAdmin\Services\Game.Entity\bin\Release\Game.Entity.pdb
+C:\Users\Administrator\Desktop\whdlm\src\win\web\WHQJAdmin\Services\Game.Entity\bin\Release\Game.Utils.dll
+C:\Users\Administrator\Desktop\whdlm\src\win\web\WHQJAdmin\Services\Game.Entity\obj\Release\Game.Entity.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\whdlm\src\win\web\WHQJAdmin\Services\Game.Entity\obj\Release\Game.Entity.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\whdlm\src\win\web\WHQJAdmin\Services\Game.Entity\obj\Release\Game.Ent.0A553F47.Up2Date
+C:\Users\Administrator\Desktop\whdlm\src\win\web\WHQJAdmin\Services\Game.Entity\obj\Release\Game.Entity.dll
+C:\Users\Administrator\Desktop\whdlm\src\win\web\WHQJAdmin\Services\Game.Entity\obj\Release\Game.Entity.pdb
