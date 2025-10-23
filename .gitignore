@@ -1,0 +1,6 @@
+/Services/Game.Data/obj/
+/Services/Game.Entity/obj/
+/Services/Game.Facade/obj/
+/Services/Game.IData/obj/
+/Common/Game.Socket/obj/
+/WebProjects/Game.Web/obj/
