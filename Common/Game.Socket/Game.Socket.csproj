@@ -58,11 +58,11 @@
     <Compile Include="WebSocketHelper.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\WHQJAdmin\Services\Game.Entity\Game.Entity.csproj">
+    <ProjectReference Include="..\..\Services\Game.Entity\Game.Entity.csproj">
       <Project>{5482f5b0-0120-4f8c-a3d1-e5771b124da0}</Project>
       <Name>Game.Entity</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\WHQJAdmin\Services\Game.Facade\Game.Facade.csproj">
+    <ProjectReference Include="..\..\Services\Game.Facade\Game.Facade.csproj">
       <Project>{96DE8061-5B74-4D3A-B389-E77C4CA2F02C}</Project>
       <Name>Game.Facade</Name>
     </ProjectReference>

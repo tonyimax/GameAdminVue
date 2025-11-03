@@ -163,7 +163,7 @@
                     this.isSubmitting = true;
 
                     try {
-                        const response = await axios.post('/WebServiceLogin.asmx/Login', {
+                        const response = await axios.post('/api.asmx/Login', {
                             username: this.form.username,
                             password: this.form.password,
                             captcha: this.form.captcha
