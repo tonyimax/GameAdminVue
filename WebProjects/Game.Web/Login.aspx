@@ -87,6 +87,10 @@
                 <p><a href="#">忘记密码？</a> | <a href="#">注册新账户</a></p>
             </div>
         </div>
+        <!-- 版本与联系信息 -->
+        <div style="text-align:center; color:#888; font-size:14px; margin-top:20px;">
+            版本：v1.0.0　|　联系邮箱：lin_hong_quan_msn@hotmail.com
+        </div>
     </div>
 
 

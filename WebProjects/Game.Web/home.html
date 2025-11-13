@@ -1110,20 +1110,25 @@
                     <!-- 页面内容 -->
                     <div class="page-content" v-else>
                         <!-- <h2>{{ activeTab.title }}</h2>
-                        <p>这是 {{ activeTab.title }} 页面内容区域。您可以根据需要在这里添加具体功能。</p>
-                        <p>当前页面ID: {{ activeTab.originalId }}</p>
-                        <p>页面路径: {{ activeTab.link }}</p>
+            <p>这是 {{ activeTab.title }} 页面内容区域。您可以根据需要在这里添加具体功能。</p>
+            <p>当前页面ID: {{ activeTab.originalId }}</p>
+            <p>页面路径: {{ activeTab.link }}</p>
 
-                        <div style="margin-top: 20px; padding: 15px; background: var(--hover-bg); border-radius: 8px;">
-                            <h3 style="margin-bottom: 10px;">页面功能区域</h3>
-                            <p>这里可以放置 {{ activeTab.title }} 的具体功能组件和操作界面。</p>
-                        </div> -->
+            <div style="margin-top: 20px; padding: 15px; background: var(--hover-bg); border-radius: 8px;">
+                <h3 style="margin-bottom: 10px;">页面功能区域</h3>
+                <p>这里可以放置 {{ activeTab.title }} 的具体功能组件和操作界面。</p>
+            </div> -->
                         <iframe v-if="activeTab && activeTab.link"
                                 :src="activeTab.link"
                                 style="width:100%; height:80vh; border:none;"
                                 loading="lazy">
                         </iframe>
                     </div>
+                </div>
+
+                <!-- 版本与联系信息 -->
+                <div style="text-align:center; color:#888; font-size:14px; margin-top:20px;">
+                    版本：v1.0.0　|　联系邮箱：lin_hong_quan_msn@hotmail.com
                 </div>
             </div>
         </div>
