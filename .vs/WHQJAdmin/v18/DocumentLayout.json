@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\GameAdminVue\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C6FD0F7A-4DF4-49D2-9EF2-05CA87A2BD04}|Services\\Game.Data\\Game.Data.csproj|c:\\users\\administrator\\desktop\\gameadminvue\\services\\game.data\\treasuredataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6FD0F7A-4DF4-49D2-9EF2-05CA87A2BD04}|Services\\Game.Data\\Game.Data.csproj|solutionrelative:services\\game.data\\treasuredataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6033651C-DDB5-4CF6-87A6-AA1C80E454E0}|WebProjects\\Game.Web\\Game.Web.csproj|c:\\users\\administrator\\desktop\\gameadminvue\\webprojects\\game.web\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6033651C-DDB5-4CF6-87A6-AA1C80E454E0}|WebProjects\\Game.Web\\Game.Web.csproj|solutionrelative:webprojects\\game.web\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TreasureDataProvider.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\GameAdminVue\\Services\\Game.Data\\TreasureDataProvider.cs",
-              "RelativeDocumentMoniker": "Services\\Game.Data\\TreasureDataProvider.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\GameAdminVue\\Services\\Game.Data\\TreasureDataProvider.cs",
-              "RelativeToolTip": "Services\\Game.Data\\TreasureDataProvider.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAADwvxQCAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T02:31:25.434Z",
+              "Title": "home.html",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\GameAdminVue\\WebProjects\\Game.Web\\home.html",
+              "RelativeDocumentMoniker": "WebProjects\\Game.Web\\home.html",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\GameAdminVue\\WebProjects\\Game.Web\\home.html",
+              "RelativeToolTip": "WebProjects\\Game.Web\\home.html",
+              "ViewState": "AgIAACUFAAAAAAAAAAAlwDQFAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-11-13T06:39:37.777Z",
               "EditorCaption": ""
             }
           ]

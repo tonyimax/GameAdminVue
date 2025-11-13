@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>网站后台管理系统</title>
+    <title>林工定制管理系统</title>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="scripts/axios.min.js"></script>
@@ -897,9 +897,9 @@
                         <i class="fas fa-cogs"></i>
                         <span>管理系统</span>
                     </div>
-                    <div class="collapse-toggle" @click="toggleSidebar">
+                    <!--<div class="collapse-toggle" @click="toggleSidebar">
                         <i class="fas" :class="isSidebarCollapsed ? 'fa-chevron-right' : 'fa-chevron-left'"></i>
-                    </div>
+                    </div>-->
                 </div>
 
                 <div class="sidebar-menu">
@@ -1331,6 +1331,7 @@
 
                 // 切换移动端侧边栏
                 const toggleMobileSidebar = () => {
+                    toggleSidebar();
                     isMobileSidebarExpanded.value = !isMobileSidebarExpanded.value;
                     showMessage(isMobileSidebarExpanded.value ? '侧边栏已展开' : '侧边栏已收缩');
                 };
