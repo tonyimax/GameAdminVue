@@ -181,7 +181,7 @@
                             console.log(ret);
                             if (parseInt(ret) == 0) {
                                 this.showMessage('登录成功！正在跳转...', 'success');
-                                window.location.href = '/Index.aspx';
+                                window.location.href = '/home.html';
                             } else {
                                 //this.showMessage(response.data.message || '登录失败，请检查用户名、密码或验证码','error');
                                 this.refreshCaptcha();

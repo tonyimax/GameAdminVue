@@ -39,7 +39,7 @@ namespace Game.Web
         /// </summary>
         protected void LeftMenu_ItemDataBound(object sender, RepeaterItemEventArgs e)
         {
-            DataTable dt = _ds.Tables[1];
+            DataTable dt = _ds.Tables[0];
             DataTable dtNew = dt.Clone();
             int moduleId = Convert.ToInt32(DataBinder.Eval(e.Item.DataItem, "ModuleID"));
             DataRow[] drArray = dt.Select("ParentID=" + moduleId);
