@@ -734,6 +734,37 @@
             animation: slideIn 0.3s ease;
         }
 
+        /*下拉菜单*/
+        .user-info {
+            position: relative;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .user-dropdown {
+            position: absolute;
+            top: 50px;
+            right: 0;
+            width: 140px;
+            background: white;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            z-index: 999;
+        }
+
+        .dropdown-item {
+            padding: 10px 14px;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .dropdown-item:hover {
+            background-color: #f5f5f5;
+        }
+        /*下拉菜单*/
+
+
         @keyframes slideIn {
             from {
                 opacity: 0;
@@ -974,13 +1005,20 @@
                             </div>
                         </div>
 
-                        <div class="user-info" @click="showUserProfile">
+                        <div class="user-info" @click="toggleDropdown" ref="userInfoRef">
                             <div class="user-avatar">{{ userInfo.name.charAt(0) }}</div>
                             <div class="user-details">
                                 <div class="user-name">{{ userInfo.name }}</div>
                                 <div class="user-role">{{ userInfo.role }}</div>
                             </div>
+
+                            <!-- 下拉菜单 -->
+                            <div class="user-dropdown" v-if="dropdownVisible">
+                                <div class="dropdown-item" @click.stop="showUserProfile">个人资料</div>
+                                <div class="dropdown-item" @click.stop="logout">退出登录</div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
 
@@ -1109,15 +1147,6 @@
 
                     <!-- 页面内容 -->
                     <div class="page-content" v-else>
-                        <!-- <h2>{{ activeTab.title }}</h2>
-            <p>这是 {{ activeTab.title }} 页面内容区域。您可以根据需要在这里添加具体功能。</p>
-            <p>当前页面ID: {{ activeTab.originalId }}</p>
-            <p>页面路径: {{ activeTab.link }}</p>
-
-            <div style="margin-top: 20px; padding: 15px; background: var(--hover-bg); border-radius: 8px;">
-                <h3 style="margin-bottom: 10px;">页面功能区域</h3>
-                <p>这里可以放置 {{ activeTab.title }} 的具体功能组件和操作界面。</p>
-            </div> -->
                         <iframe v-if="activeTab && activeTab.link"
                                 :src="activeTab.link"
                                 style="width:100%; height:80vh; border:none;"
@@ -1141,8 +1170,7 @@
     </div>
 
     <script>
-        const { createApp, ref, onMounted, computed, watch } = Vue;
-
+        const { createApp, ref, onMounted, onBeforeUnmount,computed, watch } = Vue;
         createApp({
             setup() {
                 // 用户信息
@@ -1152,6 +1180,9 @@
                     lastLogin: '2023-10-14 16:30:25',
                     lastLoginIP: '192.168.1.100'
                 });
+
+                const userInfoRef = ref(null);
+                const dropdownVisible = ref(false);
 
                 // 当前日期
                 const currentDate = ref('');
@@ -1350,9 +1381,28 @@
                     }
                 };
 
-                // 显示用户资料
+                const toggleDropdown = () => {
+                    dropdownVisible.value = !dropdownVisible.value;
+                };
+
+                // ✅ setup() 中没有 this，必须用 ref + DOM 判断
+                const closeDropdown = (e) => {
+                    if (userInfoRef.value && !userInfoRef.value.contains(e.target)) {
+                        dropdownVisible.value = false;
+                    }
+                };
+
                 const showUserProfile = () => {
                     showMessage('用户资料窗口已打开');
+                    dropdownVisible.value = false;
+                };
+
+                const logout = () => {
+                    console.log("执行退出操作");
+                    localStorage.removeItem("token");
+                    sessionStorage.removeItem("token");
+                    // 如果你没有 router 实例，这里不能写 this.$router
+                    window.location.href = "/login.aspx";
                 };
 
                 // 切换通知
@@ -1429,6 +1479,8 @@
 
                 // 组件挂载时加载保存的状态
                 onMounted(() => {
+                    document.addEventListener("click", closeDropdown);
+
                     setCurrentDate();
                     loadTheme();
                     loadMenuData();
@@ -1444,6 +1496,10 @@
                     });
                 });
 
+                onBeforeUnmount(() => {
+                    document.removeEventListener("click", closeDropdown);
+                });
+
                 // 监听菜单数据变化，加载保存的状态
                 watch(menuGroups, () => {
                     if (menuGroups.value.length > 0) {
@@ -1453,6 +1509,10 @@
 
                 return {
                     userInfo,
+                    dropdownVisible,
+                    toggleDropdown,
+                    logout,
+                    userInfoRef,
                     currentDate,
                     isSidebarCollapsed,
                     isMobileSidebarExpanded,

@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\GameAdminVue\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6033651C-DDB5-4CF6-87A6-AA1C80E454E0}|WebProjects\\Game.Web\\Game.Web.csproj|c:\\users\\administrator\\desktop\\gameadminvue\\webprojects\\game.web\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6033651C-DDB5-4CF6-87A6-AA1C80E454E0}|WebProjects\\Game.Web\\Game.Web.csproj|solutionrelative:webprojects\\game.web\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "home.html",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\GameAdminVue\\WebProjects\\Game.Web\\home.html",
+              "RelativeDocumentMoniker": "WebProjects\\Game.Web\\home.html",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\GameAdminVue\\WebProjects\\Game.Web\\home.html",
+              "RelativeToolTip": "WebProjects\\Game.Web\\home.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-11-14T02:41:57.162Z",
+              "EditorCaption": ""
             }
           ]
         }
