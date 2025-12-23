@@ -6,12 +6,14 @@
 }
 
 body {
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
 }
 
 .container {
@@ -44,6 +46,12 @@ body {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     padding: 35px 30px;
     animation: fadeIn 0.8s ease-out;
+    position: relative; /* 使登录容器位于背景之上 */
+    z-index: 2; /* 设置更高的z-index，确保它在透明背景之上 */
+    /* 增强立体感 */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3), 0 8px 30px rgba(0, 0, 0, 0.1); /* 更强的阴影效果 */
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85)); /* 背景渐变效果，增强深度感 */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* 添加边框，增加立体感 */
 }
 
 h1 {
@@ -138,6 +146,7 @@ tr:hover td {
 
 .form-group {
     margin-bottom: 20px;
+    z-index: 2;
 }
 
 label {

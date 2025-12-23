@@ -7,10 +7,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/main.css" rel="stylesheet" type="text/css" />
-    <title>Login</title>
+    <title>林工定制游戏后台管理系统 微信:15118164480 邮箱:lin_hong_quan_msn@hotmail.com - 登陆</title>
 </head>
 <script src="scripts/vue.js"></script>
 <script src="scripts/axios.min.js"></script>
+<script src="scripts/bg.js"></script>
 <body>
         <div id="app">
         <div class="login-container">
@@ -92,8 +93,6 @@
             版本：v1.0.0　|　联系邮箱：lin_hong_quan_msn@hotmail.com
         </div>
     </div>
-
-
     <script>
         new Vue({
             el: '#app',
